@@ -1,0 +1,86 @@
+---
+title: "class 2"
+author: "Lukas"
+date: "9/2/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r load}
+pacman::p_load(tidyverse)
+```
+
+#exercise 3.1
+```{r}
+(0.5*200+0.6*250+0.4*300+0.3*250)/(200+250+300+250)
+```
+
+#exercise 3.3
+```{r}
+
+
+x <- seq(-10, 10, by = 0.01)
+y<- dnorm(x, mean = 2, sd = 1)
+plot(x,y , type = "l")
+
+x <- seq(-10, 10, by = 0.01)
+y<- dnorm(x, mean = 2, sd = 2)
+plot(x,y , type = "l")
+
+x <- seq(-20, 20, by = 0.01)
+y<- dnorm(x, mean = 0, sd = 5)
+plot(x,y , type = "l")
+```
+#exercise 3.4
+```{r}
+x = seq(0, 10, by = 1)
+y=dpois(x, lambda = 3.5)
+plot(x,y , type = "l")
+```
+#exercise 3.5
+```{r}
+x <- seq(0, 20, by = 1)
+y <- dbinom(x, 20, 0.3)
+plot(x, y, type = "l")
+```
+#exercise 3.6
+```{r}
+#a) y=47.5 + 1.5x
+
+#b) ranges from approx 70 - 130
+
+
+
+```
+
+#exercise 4.1
+```{r}
+(50+40)/2
+
+se1 <- sqrt(0.5*0.5/500)
+se2 <- sqrt(0.4*0.6/500)
+
+se <- sqrt(se1^2 + se2^2)
+se
+```
+#exercise 4.2
+```{r}
+0.05 > sqrt(0.5*0.5/n)
+0.05 > sqrt(0.5^2/n)
+0.05 > 0.5*sqrt(1/n)
+0.05^2 > 0.25*1/n
+n > 0.25/(0.05^2)
+
+
+0.25/(0.05^2)
+```
+#exercise 4.3
+```{r}
+
+```
+
+
+
